@@ -1,0 +1,1167 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F447655E21F6B2B40049A76B /* GrayN_Base64_GrayN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447655A21F6B2B40049A76B /* GrayN_Base64_GrayN.cpp */; };
+		F447655F21F6B2B40049A76B /* GrayN_Des_GrayN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447655D21F6B2B40049A76B /* GrayN_Des_GrayN.cpp */; };
+		F447657121F6B3120049A76B /* GrayNjson_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447656521F6B3100049A76B /* GrayNjson_reader.cpp */; };
+		F447657221F6B3120049A76B /* GrayNjson_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447656D21F6B3110049A76B /* GrayNjson_value.cpp */; };
+		F447657321F6B3120049A76B /* GrayNjson_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447656E21F6B3120049A76B /* GrayNjson_writer.cpp */; };
+		F447657721F6B3220049A76B /* GrayN_GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F447657421F6B3220049A76B /* GrayN_GTMBase64.m */; };
+		F447657F21F6B35E0049A76B /* GrayN_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F447657921F6B35C0049A76B /* GrayN_Reachability.m */; };
+		F447658021F6B35E0049A76B /* GrayN_Http_GrayN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447657C21F6B35D0049A76B /* GrayN_Http_GrayN.cpp */; };
+		F447658121F6B35E0049A76B /* GrayN_Https_GrayN.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447657D21F6B35D0049A76B /* GrayN_Https_GrayN.mm */; };
+		F447659421F6B3740049A76B /* GrayN_AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F447658421F6B3720049A76B /* GrayN_AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F447659521F6B3740049A76B /* GrayN_AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F447658521F6B3720049A76B /* GrayN_AFURLSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F447659621F6B3740049A76B /* GrayN_AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F447658621F6B3720049A76B /* GrayN_AFURLResponseSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F447659721F6B3740049A76B /* GrayN_AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F447658821F6B3720049A76B /* GrayN_AFURLRequestSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F447659821F6B3740049A76B /* GrayN_AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F447658921F6B3720049A76B /* GrayN_AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F447659921F6B3740049A76B /* GrayN_AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F447658C21F6B3730049A76B /* GrayN_AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F447659A21F6B3740049A76B /* GrayN_AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F447658F21F6B3730049A76B /* GrayN_AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F447659B21F6B3740049A76B /* GrayN_AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F447659121F6B3740049A76B /* GrayN_AFHTTPRequestOperationManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F447659C21F6B3740049A76B /* GrayN_AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F447659221F6B3740049A76B /* GrayN_AFSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F447659F21F6B3840049A76B /* GrayNsocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447659D21F6B3840049A76B /* GrayNsocket.cpp */; };
+		F44765A921F6B3CD0049A76B /* GrayNchannel.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44765A221F6B3CB0049A76B /* GrayNchannel.mm */; };
+		F44765AA21F6B3CD0049A76B /* GrayNchannelSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765A621F6B3CC0049A76B /* GrayNchannelSDK.m */; };
+		F44765AB21F6B3CD0049A76B /* GrayNSDK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F44765A821F6B3CC0049A76B /* GrayNSDK.cpp */; };
+		F44765B721F6B3E60049A76B /* GrayN_Store_IAP.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44765AE21F6B3E50049A76B /* GrayN_Store_IAP.mm */; };
+		F44765B821F6B3E60049A76B /* GrayN_AppPurchase.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44765AF21F6B3E50049A76B /* GrayN_AppPurchase.mm */; };
+		F44765B921F6B3E60049A76B /* GrayN_Stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F44765B121F6B3E50049A76B /* GrayN_Stream.cpp */; };
+		F44765BA21F6B3E60049A76B /* AppStore_IAP_GrayN.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44765B521F6B3E50049A76B /* AppStore_IAP_GrayN.mm */; };
+		F44765BB21F6B3E60049A76B /* appstoreSDK_GrayN.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44765B621F6B3E60049A76B /* appstoreSDK_GrayN.mm */; };
+		F44765C421F6B4210049A76B /* AppLog_GrayN.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44765C021F6B4210049A76B /* AppLog_GrayN.mm */; };
+		F44765C521F6B4210049A76B /* SynAppLog_GrayN.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44765C321F6B4210049A76B /* SynAppLog_GrayN.mm */; };
+		F44765D021F6B4340049A76B /* GrayN_FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765C621F6B4330049A76B /* GrayN_FMDatabasePool.m */; };
+		F44765D121F6B4340049A76B /* GrayN_FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765C921F6B4330049A76B /* GrayN_FMDatabaseQueue.m */; };
+		F44765D221F6B4340049A76B /* GrayN_FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765CA21F6B4330049A76B /* GrayN_FMResultSet.m */; };
+		F44765D321F6B4340049A76B /* GrayN_FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765CB21F6B4330049A76B /* GrayN_FMDatabaseAdditions.m */; };
+		F44765D421F6B4340049A76B /* GrayN_FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765CC21F6B4330049A76B /* GrayN_FMDatabase.m */; };
+		F44765D721F6B44F0049A76B /* GrayN_Store_ProductInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765D621F6B44F0049A76B /* GrayN_Store_ProductInfo.m */; };
+		F44765DC21F6B4740049A76B /* GrayN_AppReceipt.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44765D821F6B4740049A76B /* GrayN_AppReceipt.mm */; };
+		F44765DD21F6B4740049A76B /* GrayN_SynAppReceipt.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44765DB21F6B4740049A76B /* GrayN_SynAppReceipt.mm */; };
+		F44765E821F6B5910049A76B /* GrayNcustomService_Control.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44765E721F6B5910049A76B /* GrayNcustomService_Control.mm */; };
+		F44765EE21F6B5C20049A76B /* GrayN_GzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765EA21F6B5C10049A76B /* GrayN_GzipUtility.m */; };
+		F44765EF21F6B5C20049A76B /* GrayN_CustomServiceUploadFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44765EB21F6B5C10049A76B /* GrayN_CustomServiceUploadFile.mm */; };
+		F44765F621F6B5D70049A76B /* GrayN_CustomService_Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765F121F6B5D70049A76B /* GrayN_CustomService_Photo.m */; };
+		F44765F721F6B5D70049A76B /* GrayNcustomService_ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765F321F6B5D70049A76B /* GrayNcustomService_ImageData.m */; };
+		F44765F821F6B5D70049A76B /* GrayN_AsyncImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765F521F6B5D70049A76B /* GrayN_AsyncImageLoader.m */; };
+		F447660821F6B5F30049A76B /* GrayN_ELCAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = F44765FD21F6B5F10049A76B /* GrayN_ELCAsset.m */; };
+		F447660921F6B5F30049A76B /* GrayN_ELCOverlayImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F447660021F6B5F20049A76B /* GrayN_ELCOverlayImageView.m */; };
+		F447660A21F6B5F30049A76B /* GrayN_ELCAssetTablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F447660221F6B5F20049A76B /* GrayN_ELCAssetTablePicker.m */; };
+		F447660B21F6B5F30049A76B /* GrayN_ELCAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F447660321F6B5F20049A76B /* GrayN_ELCAssetCell.m */; };
+		F447660C21F6B5F30049A76B /* GrayN_ELCConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = F447660521F6B5F20049A76B /* GrayN_ELCConsole.m */; };
+		F447660D21F6B5F30049A76B /* GrayN_ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F447660721F6B5F20049A76B /* GrayN_ELCImagePickerController.m */; };
+		F447661921F6B6380049A76B /* GrayN_ErrorLog_GrayN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447661021F6B6370049A76B /* GrayN_ErrorLog_GrayN.cpp */; };
+		F447661A21F6B6380049A76B /* GrayNlogCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447661121F6B6370049A76B /* GrayNlogCenter.mm */; };
+		F447661B21F6B6380049A76B /* GrayN_LogHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447661421F6B6370049A76B /* GrayN_LogHttp.cpp */; };
+		F447661C21F6B6380049A76B /* GrayN_LogDatabase_GrayN.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447661521F6B6370049A76B /* GrayN_LogDatabase_GrayN.mm */; };
+		F447662121F6B65A0049A76B /* GrayNpayCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447662021F6B65A0049A76B /* GrayNpayCenter.cpp */; };
+		F447662621F6B6770049A76B /* GrayN_UserHeart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447662321F6B6770049A76B /* GrayN_UserHeart.cpp */; };
+		F447662721F6B6770049A76B /* GrayN_UserCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F447662421F6B6770049A76B /* GrayN_UserCenter.cpp */; };
+		F447662F21F6B6A70049A76B /* GrayN_Offical.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447662A21F6B6A60049A76B /* GrayN_Offical.mm */; };
+		F447663021F6B6A70049A76B /* GrayN_WebViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447662C21F6B6A60049A76B /* GrayN_WebViewController.mm */; };
+		F447663121F6B6A70049A76B /* GrayN_BaseControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447662E21F6B6A60049A76B /* GrayN_BaseControl.mm */; };
+		F447664621F6B6CB0049A76B /* GrayN_Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = F447663521F6B6C80049A76B /* GrayN_Hud.m */; };
+		F447664721F6B6CB0049A76B /* GrayN_UserInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447663621F6B6C80049A76B /* GrayN_UserInfo.mm */; };
+		F447664821F6B6CB0049A76B /* GrayN_QRCodeConfirm.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447663A21F6B6C90049A76B /* GrayN_QRCodeConfirm.mm */; };
+		F447664921F6B6CB0049A76B /* GrayN_CodeScanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447663B21F6B6C90049A76B /* GrayN_CodeScanner.mm */; };
+		F447664A21F6B6CB0049A76B /* GrayN_Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = F447663D21F6B6C90049A76B /* GrayN_Toast.m */; };
+		F447664B21F6B6CB0049A76B /* GrayN_Button.m in Sources */ = {isa = PBXBuildFile; fileRef = F447663E21F6B6CA0049A76B /* GrayN_Button.m */; };
+		F447664C21F6B6CB0049A76B /* GrayN_GameCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447663F21F6B6CA0049A76B /* GrayN_GameCenter.mm */; };
+		F447664D21F6B6CB0049A76B /* GrayN_Tools.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447664121F6B6CA0049A76B /* GrayN_Tools.mm */; };
+		F447664E21F6B6CB0049A76B /* GrayN_DebugView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447664321F6B6CA0049A76B /* GrayN_DebugView.mm */; };
+		F447665721F6B6DD0049A76B /* GrayN_WebViewJavascriptBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447664F21F6B6DC0049A76B /* GrayN_WebViewJavascriptBridge.mm */; };
+		F447665821F6B6DD0049A76B /* GrayN_WKWebViewJavascriptBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = F447665221F6B6DC0049A76B /* GrayN_WKWebViewJavascriptBridge.mm */; };
+		F447665921F6B6DD0049A76B /* GrayN_WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F447665521F6B6DC0049A76B /* GrayN_WebViewJavascriptBridgeBase.m */; };
+		F447665A21F6B6DD0049A76B /* GrayN_WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = F447665621F6B6DC0049A76B /* GrayN_WebViewJavascriptBridge_JS.m */; };
+		F46D125F21F6B16B004CEA10 /* OPGameSDK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F46D125D21F6B16B004CEA10 /* OPGameSDK.cpp */; };
+		F46D126521F6B189004CEA10 /* GrayNinit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F46D126121F6B189004CEA10 /* GrayNinit.cpp */; };
+		F46D126621F6B189004CEA10 /* GrayNinitCheck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F46D126321F6B189004CEA10 /* GrayNinitCheck.cpp */; };
+		F46D128021F6B222004CEA10 /* GrayNkeychainConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F46D126D21F6B21F004CEA10 /* GrayNkeychainConfig.m */; };
+		F46D128121F6B222004CEA10 /* GrayNcommon.mm in Sources */ = {isa = PBXBuildFile; fileRef = F46D126F21F6B21F004CEA10 /* GrayNcommon.mm */; };
+		F46D128221F6B222004CEA10 /* GrayN_Timer_GrayN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F46D127321F6B220004CEA10 /* GrayN_Timer_GrayN.cpp */; };
+		F46D128321F6B222004CEA10 /* GrayNserviceCodeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F46D127421F6B220004CEA10 /* GrayNserviceCodeBridge.m */; };
+		F46D128421F6B222004CEA10 /* GrayNasyn_CallBack.mm in Sources */ = {isa = PBXBuildFile; fileRef = F46D127521F6B220004CEA10 /* GrayNasyn_CallBack.mm */; };
+		F46D128521F6B222004CEA10 /* GrayN_Thread_GrayN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F46D127621F6B220004CEA10 /* GrayN_Thread_GrayN.cpp */; };
+		F46D128621F6B222004CEA10 /* GrayNcommon_oc.mm in Sources */ = {isa = PBXBuildFile; fileRef = F46D127A21F6B220004CEA10 /* GrayNcommon_oc.mm */; };
+		F46D128721F6B222004CEA10 /* GrayN_LoadingUI.mm in Sources */ = {isa = PBXBuildFile; fileRef = F46D127C21F6B221004CEA10 /* GrayN_LoadingUI.mm */; };
+		F46D128821F6B222004CEA10 /* GrayN_ProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = F46D127D21F6B221004CEA10 /* GrayN_ProgressHud.m */; };
+		F46D128921F6B222004CEA10 /* GrayN_UrlEncode_GrayN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F46D127E21F6B221004CEA10 /* GrayN_UrlEncode_GrayN.cpp */; };
+		F4A2EB9621E4B0620050EB7B /* GrayNbaseSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EB9421E4B0620050EB7B /* GrayNbaseSDK.mm */; };
+		F4EF74EF22547E2700A16E4A /* GrayNLogHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4EF74ED22547E2600A16E4A /* GrayNLogHandler.mm */; };
+		F4EF74F42254868F00A16E4A /* GrayNAdsBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4EF74F32254868F00A16E4A /* GrayNAdsBridge.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4A2E9D221D1DE680050EB7B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F447655A21F6B2B40049A76B /* GrayN_Base64_GrayN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayN_Base64_GrayN.cpp; sourceTree = "<group>"; };
+		F447655B21F6B2B40049A76B /* GrayN_Des_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Des_GrayN.h; sourceTree = "<group>"; };
+		F447655C21F6B2B40049A76B /* GrayN_Base64_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Base64_GrayN.h; sourceTree = "<group>"; };
+		F447655D21F6B2B40049A76B /* GrayN_Des_GrayN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayN_Des_GrayN.cpp; sourceTree = "<group>"; };
+		F447656221F6B3100049A76B /* GrayNwriter_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNwriter_cpp.h; sourceTree = "<group>"; };
+		F447656321F6B3100049A76B /* GrayNjson_valueiterator.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GrayNjson_valueiterator.inl; sourceTree = "<group>"; };
+		F447656421F6B3100049A76B /* GrayNautolink_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNautolink_cpp.h; sourceTree = "<group>"; };
+		F447656521F6B3100049A76B /* GrayNjson_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayNjson_reader.cpp; sourceTree = "<group>"; };
+		F447656621F6B3100049A76B /* GrayNjson_internalarray.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GrayNjson_internalarray.inl; sourceTree = "<group>"; };
+		F447656721F6B3100049A76B /* GrayNfeatures_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNfeatures_cpp.h; sourceTree = "<group>"; };
+		F447656821F6B3100049A76B /* GrayNconfig_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNconfig_cpp.h; sourceTree = "<group>"; };
+		F447656921F6B3100049A76B /* GrayNforwards_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNforwards_cpp.h; sourceTree = "<group>"; };
+		F447656A21F6B3110049A76B /* GrayNjson_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNjson_cpp.h; sourceTree = "<group>"; };
+		F447656B21F6B3110049A76B /* GrayNjson_internalmap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GrayNjson_internalmap.inl; sourceTree = "<group>"; };
+		F447656C21F6B3110049A76B /* GrayNjson_batchallocator_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNjson_batchallocator_cpp.h; sourceTree = "<group>"; };
+		F447656D21F6B3110049A76B /* GrayNjson_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayNjson_value.cpp; sourceTree = "<group>"; };
+		F447656E21F6B3120049A76B /* GrayNjson_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayNjson_writer.cpp; sourceTree = "<group>"; };
+		F447656F21F6B3120049A76B /* GrayNreader_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNreader_cpp.h; sourceTree = "<group>"; };
+		F447657021F6B3120049A76B /* GrayNvalue_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNvalue_cpp.h; sourceTree = "<group>"; };
+		F447657421F6B3220049A76B /* GrayN_GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_GTMBase64.m; sourceTree = "<group>"; };
+		F447657521F6B3220049A76B /* GrayN_GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_GTMDefines.h; sourceTree = "<group>"; };
+		F447657621F6B3220049A76B /* GrayN_GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_GTMBase64.h; sourceTree = "<group>"; };
+		F447657921F6B35C0049A76B /* GrayN_Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_Reachability.m; sourceTree = "<group>"; };
+		F447657A21F6B35C0049A76B /* GrayN_Http_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Http_GrayN.h; sourceTree = "<group>"; };
+		F447657B21F6B35C0049A76B /* GrayN_Https_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Https_GrayN.h; sourceTree = "<group>"; };
+		F447657C21F6B35D0049A76B /* GrayN_Http_GrayN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayN_Http_GrayN.cpp; sourceTree = "<group>"; };
+		F447657D21F6B35D0049A76B /* GrayN_Https_GrayN.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_Https_GrayN.mm; sourceTree = "<group>"; };
+		F447657E21F6B35D0049A76B /* GrayN_Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Reachability.h; sourceTree = "<group>"; };
+		F447658221F6B3710049A76B /* GrayN_AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AFSecurityPolicy.h; sourceTree = "<group>"; };
+		F447658321F6B3720049A76B /* GrayN_AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		F447658421F6B3720049A76B /* GrayN_AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		F447658521F6B3720049A76B /* GrayN_AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_AFURLSessionManager.m; sourceTree = "<group>"; };
+		F447658621F6B3720049A76B /* GrayN_AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		F447658721F6B3720049A76B /* GrayN_AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		F447658821F6B3720049A76B /* GrayN_AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		F447658921F6B3720049A76B /* GrayN_AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		F447658A21F6B3720049A76B /* GrayN_AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		F447658B21F6B3730049A76B /* GrayN_AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		F447658C21F6B3730049A76B /* GrayN_AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		F447658D21F6B3730049A76B /* GrayN_AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		F447658E21F6B3730049A76B /* GrayN_AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		F447658F21F6B3730049A76B /* GrayN_AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		F447659021F6B3740049A76B /* GrayN_AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AFURLSessionManager.h; sourceTree = "<group>"; };
+		F447659121F6B3740049A76B /* GrayN_AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		F447659221F6B3740049A76B /* GrayN_AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_AFSecurityPolicy.m; sourceTree = "<group>"; };
+		F447659321F6B3740049A76B /* GrayN_AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		F447659D21F6B3840049A76B /* GrayNsocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayNsocket.cpp; sourceTree = "<group>"; };
+		F447659E21F6B3840049A76B /* GrayNsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNsocket.h; sourceTree = "<group>"; };
+		F44765A221F6B3CB0049A76B /* GrayNchannel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayNchannel.mm; sourceTree = "<group>"; };
+		F44765A321F6B3CB0049A76B /* GrayNchannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNchannel.h; sourceTree = "<group>"; };
+		F44765A421F6B3CC0049A76B /* GrayNchannelConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNchannelConfig.h; sourceTree = "<group>"; };
+		F44765A521F6B3CC0049A76B /* GrayNchannelSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNchannelSDK.h; sourceTree = "<group>"; };
+		F44765A621F6B3CC0049A76B /* GrayNchannelSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayNchannelSDK.m; sourceTree = "<group>"; };
+		F44765A721F6B3CC0049A76B /* GrayNSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNSDK.h; sourceTree = "<group>"; };
+		F44765A821F6B3CC0049A76B /* GrayNSDK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayNSDK.cpp; sourceTree = "<group>"; };
+		F44765AC21F6B3E40049A76B /* AppStore_IAP_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStore_IAP_GrayN.h; sourceTree = "<group>"; };
+		F44765AD21F6B3E50049A76B /* GrayN_TempleQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_TempleQueue.h; sourceTree = "<group>"; };
+		F44765AE21F6B3E50049A76B /* GrayN_Store_IAP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_Store_IAP.mm; sourceTree = "<group>"; };
+		F44765AF21F6B3E50049A76B /* GrayN_AppPurchase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_AppPurchase.mm; sourceTree = "<group>"; };
+		F44765B021F6B3E50049A76B /* GrayN_Store_IAP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Store_IAP.h; sourceTree = "<group>"; };
+		F44765B121F6B3E50049A76B /* GrayN_Stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayN_Stream.cpp; sourceTree = "<group>"; };
+		F44765B221F6B3E50049A76B /* appstoreSDK_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appstoreSDK_GrayN.h; sourceTree = "<group>"; };
+		F44765B321F6B3E50049A76B /* GrayN_Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Stream.h; sourceTree = "<group>"; };
+		F44765B421F6B3E50049A76B /* GrayN_AppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AppPurchase.h; sourceTree = "<group>"; };
+		F44765B521F6B3E50049A76B /* AppStore_IAP_GrayN.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppStore_IAP_GrayN.mm; sourceTree = "<group>"; };
+		F44765B621F6B3E60049A76B /* appstoreSDK_GrayN.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = appstoreSDK_GrayN.mm; sourceTree = "<group>"; };
+		F44765C021F6B4210049A76B /* AppLog_GrayN.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppLog_GrayN.mm; sourceTree = "<group>"; };
+		F44765C121F6B4210049A76B /* SynAppLog_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynAppLog_GrayN.h; sourceTree = "<group>"; };
+		F44765C221F6B4210049A76B /* AppLog_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLog_GrayN.h; sourceTree = "<group>"; };
+		F44765C321F6B4210049A76B /* SynAppLog_GrayN.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SynAppLog_GrayN.mm; sourceTree = "<group>"; };
+		F44765C621F6B4330049A76B /* GrayN_FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_FMDatabasePool.m; sourceTree = "<group>"; };
+		F44765C721F6B4330049A76B /* GrayN_FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_FMDatabaseQueue.h; sourceTree = "<group>"; };
+		F44765C821F6B4330049A76B /* GrayN_FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_FMDatabase.h; sourceTree = "<group>"; };
+		F44765C921F6B4330049A76B /* GrayN_FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_FMDatabaseQueue.m; sourceTree = "<group>"; };
+		F44765CA21F6B4330049A76B /* GrayN_FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_FMResultSet.m; sourceTree = "<group>"; };
+		F44765CB21F6B4330049A76B /* GrayN_FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		F44765CC21F6B4330049A76B /* GrayN_FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_FMDatabase.m; sourceTree = "<group>"; };
+		F44765CD21F6B4330049A76B /* GrayN_FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_FMDatabasePool.h; sourceTree = "<group>"; };
+		F44765CE21F6B4340049A76B /* GrayN_FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		F44765CF21F6B4340049A76B /* GrayN_FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_FMResultSet.h; sourceTree = "<group>"; };
+		F44765D521F6B44F0049A76B /* GrayN_Store_ProductInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Store_ProductInfo.h; sourceTree = "<group>"; };
+		F44765D621F6B44F0049A76B /* GrayN_Store_ProductInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_Store_ProductInfo.m; sourceTree = "<group>"; };
+		F44765D821F6B4740049A76B /* GrayN_AppReceipt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_AppReceipt.mm; sourceTree = "<group>"; };
+		F44765D921F6B4740049A76B /* GrayN_AppReceipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AppReceipt.h; sourceTree = "<group>"; };
+		F44765DA21F6B4740049A76B /* GrayN_SynAppReceipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_SynAppReceipt.h; sourceTree = "<group>"; };
+		F44765DB21F6B4740049A76B /* GrayN_SynAppReceipt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_SynAppReceipt.mm; sourceTree = "<group>"; };
+		F44765E521F6B5910049A76B /* GrayNcustomService_Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNcustomService_Control.h; sourceTree = "<group>"; };
+		F44765E621F6B5910049A76B /* GrayNcustomServiceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNcustomServiceConfig.h; sourceTree = "<group>"; };
+		F44765E721F6B5910049A76B /* GrayNcustomService_Control.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayNcustomService_Control.mm; sourceTree = "<group>"; };
+		F44765EA21F6B5C10049A76B /* GrayN_GzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_GzipUtility.m; sourceTree = "<group>"; };
+		F44765EB21F6B5C10049A76B /* GrayN_CustomServiceUploadFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_CustomServiceUploadFile.mm; sourceTree = "<group>"; };
+		F44765EC21F6B5C10049A76B /* GrayN_CustomServiceUploadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_CustomServiceUploadFile.h; sourceTree = "<group>"; };
+		F44765ED21F6B5C10049A76B /* GrayN_GzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_GzipUtility.h; sourceTree = "<group>"; };
+		F44765F021F6B5D70049A76B /* GrayN_CustomService_Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_CustomService_Photo.h; sourceTree = "<group>"; };
+		F44765F121F6B5D70049A76B /* GrayN_CustomService_Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_CustomService_Photo.m; sourceTree = "<group>"; };
+		F44765F221F6B5D70049A76B /* GrayNcustomService_ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNcustomService_ImageData.h; sourceTree = "<group>"; };
+		F44765F321F6B5D70049A76B /* GrayNcustomService_ImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayNcustomService_ImageData.m; sourceTree = "<group>"; };
+		F44765F421F6B5D70049A76B /* GrayN_AsyncImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_AsyncImageLoader.h; sourceTree = "<group>"; };
+		F44765F521F6B5D70049A76B /* GrayN_AsyncImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_AsyncImageLoader.m; sourceTree = "<group>"; };
+		F44765F921F6B5F00049A76B /* GrayN_ELCImagePickerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_ELCImagePickerHeader.h; sourceTree = "<group>"; };
+		F44765FA21F6B5F00049A76B /* GrayN_ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_ELCAssetSelectionDelegate.h; sourceTree = "<group>"; };
+		F44765FB21F6B5F10049A76B /* GrayN_ELCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_ELCImagePickerController.h; sourceTree = "<group>"; };
+		F44765FC21F6B5F10049A76B /* GrayN_ELCOverlayImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_ELCOverlayImageView.h; sourceTree = "<group>"; };
+		F44765FD21F6B5F10049A76B /* GrayN_ELCAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_ELCAsset.m; sourceTree = "<group>"; };
+		F44765FE21F6B5F10049A76B /* GrayN_ELCAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_ELCAssetCell.h; sourceTree = "<group>"; };
+		F44765FF21F6B5F10049A76B /* GrayN_ELCAssetTablePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_ELCAssetTablePicker.h; sourceTree = "<group>"; };
+		F447660021F6B5F20049A76B /* GrayN_ELCOverlayImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_ELCOverlayImageView.m; sourceTree = "<group>"; };
+		F447660121F6B5F20049A76B /* GrayN_ELCAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_ELCAsset.h; sourceTree = "<group>"; };
+		F447660221F6B5F20049A76B /* GrayN_ELCAssetTablePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_ELCAssetTablePicker.m; sourceTree = "<group>"; };
+		F447660321F6B5F20049A76B /* GrayN_ELCAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_ELCAssetCell.m; sourceTree = "<group>"; };
+		F447660421F6B5F20049A76B /* GrayN_ELCConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_ELCConsole.h; sourceTree = "<group>"; };
+		F447660521F6B5F20049A76B /* GrayN_ELCConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_ELCConsole.m; sourceTree = "<group>"; };
+		F447660621F6B5F20049A76B /* GrayN_ELCAssetPickerFilterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_ELCAssetPickerFilterDelegate.h; sourceTree = "<group>"; };
+		F447660721F6B5F20049A76B /* GrayN_ELCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_ELCImagePickerController.m; sourceTree = "<group>"; };
+		F447661021F6B6370049A76B /* GrayN_ErrorLog_GrayN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayN_ErrorLog_GrayN.cpp; sourceTree = "<group>"; };
+		F447661121F6B6370049A76B /* GrayNlogCenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayNlogCenter.mm; sourceTree = "<group>"; };
+		F447661221F6B6370049A76B /* GrayNlogCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNlogCenter.h; sourceTree = "<group>"; };
+		F447661321F6B6370049A76B /* GrayN_LogDatabase_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_LogDatabase_GrayN.h; sourceTree = "<group>"; };
+		F447661421F6B6370049A76B /* GrayN_LogHttp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayN_LogHttp.cpp; sourceTree = "<group>"; };
+		F447661521F6B6370049A76B /* GrayN_LogDatabase_GrayN.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_LogDatabase_GrayN.mm; sourceTree = "<group>"; };
+		F447661621F6B6370049A76B /* GrayNlogHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNlogHeader.h; sourceTree = "<group>"; };
+		F447661721F6B6380049A76B /* GrayN_LogHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_LogHttp.h; sourceTree = "<group>"; };
+		F447661821F6B6380049A76B /* GrayN_ErrorLog_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_ErrorLog_GrayN.h; sourceTree = "<group>"; };
+		F447661F21F6B65A0049A76B /* GrayNpayCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNpayCenter.h; sourceTree = "<group>"; };
+		F447662021F6B65A0049A76B /* GrayNpayCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayNpayCenter.cpp; sourceTree = "<group>"; };
+		F447662221F6B6770049A76B /* GrayN_UserHeart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_UserHeart.h; sourceTree = "<group>"; };
+		F447662321F6B6770049A76B /* GrayN_UserHeart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayN_UserHeart.cpp; sourceTree = "<group>"; };
+		F447662421F6B6770049A76B /* GrayN_UserCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayN_UserCenter.cpp; sourceTree = "<group>"; };
+		F447662521F6B6770049A76B /* GrayN_UserCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_UserCenter.h; sourceTree = "<group>"; };
+		F447662921F6B6A60049A76B /* GrayN_BaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_BaseControl.h; sourceTree = "<group>"; };
+		F447662A21F6B6A60049A76B /* GrayN_Offical.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_Offical.mm; sourceTree = "<group>"; };
+		F447662B21F6B6A60049A76B /* GrayN_WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_WebViewController.h; sourceTree = "<group>"; };
+		F447662C21F6B6A60049A76B /* GrayN_WebViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_WebViewController.mm; sourceTree = "<group>"; };
+		F447662D21F6B6A60049A76B /* GrayN_Offical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Offical.h; sourceTree = "<group>"; };
+		F447662E21F6B6A60049A76B /* GrayN_BaseControl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_BaseControl.mm; sourceTree = "<group>"; };
+		F447663421F6B6C80049A76B /* GrayN_UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_UserInfo.h; sourceTree = "<group>"; };
+		F447663521F6B6C80049A76B /* GrayN_Hud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_Hud.m; sourceTree = "<group>"; };
+		F447663621F6B6C80049A76B /* GrayN_UserInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_UserInfo.mm; sourceTree = "<group>"; };
+		F447663721F6B6C80049A76B /* GrayN_DebugView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_DebugView.h; sourceTree = "<group>"; };
+		F447663821F6B6C80049A76B /* GrayN_GameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_GameCenter.h; sourceTree = "<group>"; };
+		F447663921F6B6C90049A76B /* GrayN_Hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Hud.h; sourceTree = "<group>"; };
+		F447663A21F6B6C90049A76B /* GrayN_QRCodeConfirm.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_QRCodeConfirm.mm; sourceTree = "<group>"; };
+		F447663B21F6B6C90049A76B /* GrayN_CodeScanner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_CodeScanner.mm; sourceTree = "<group>"; };
+		F447663C21F6B6C90049A76B /* GrayN_Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Toast.h; sourceTree = "<group>"; };
+		F447663D21F6B6C90049A76B /* GrayN_Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_Toast.m; sourceTree = "<group>"; };
+		F447663E21F6B6CA0049A76B /* GrayN_Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_Button.m; sourceTree = "<group>"; };
+		F447663F21F6B6CA0049A76B /* GrayN_GameCenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_GameCenter.mm; sourceTree = "<group>"; };
+		F447664021F6B6CA0049A76B /* GrayN_Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Tools.h; sourceTree = "<group>"; };
+		F447664121F6B6CA0049A76B /* GrayN_Tools.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_Tools.mm; sourceTree = "<group>"; };
+		F447664221F6B6CA0049A76B /* GrayN_Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Button.h; sourceTree = "<group>"; };
+		F447664321F6B6CA0049A76B /* GrayN_DebugView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_DebugView.mm; sourceTree = "<group>"; };
+		F447664421F6B6CA0049A76B /* GrayN_QRCodeConfirm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_QRCodeConfirm.h; sourceTree = "<group>"; };
+		F447664521F6B6CB0049A76B /* GrayN_CodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_CodeScanner.h; sourceTree = "<group>"; };
+		F447664F21F6B6DC0049A76B /* GrayN_WebViewJavascriptBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_WebViewJavascriptBridge.mm; sourceTree = "<group>"; };
+		F447665021F6B6DC0049A76B /* GrayN_WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		F447665121F6B6DC0049A76B /* GrayN_WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		F447665221F6B6DC0049A76B /* GrayN_WKWebViewJavascriptBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_WKWebViewJavascriptBridge.mm; sourceTree = "<group>"; };
+		F447665321F6B6DC0049A76B /* GrayN_WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		F447665421F6B6DC0049A76B /* GrayN_WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		F447665521F6B6DC0049A76B /* GrayN_WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		F447665621F6B6DC0049A76B /* GrayN_WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		F46D125D21F6B16B004CEA10 /* OPGameSDK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OPGameSDK.cpp; sourceTree = "<group>"; };
+		F46D125E21F6B16B004CEA10 /* OPGameSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPGameSDK.h; sourceTree = "<group>"; };
+		F46D126121F6B189004CEA10 /* GrayNinit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayNinit.cpp; sourceTree = "<group>"; };
+		F46D126221F6B189004CEA10 /* GrayNinitCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNinitCheck.h; sourceTree = "<group>"; };
+		F46D126321F6B189004CEA10 /* GrayNinitCheck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayNinitCheck.cpp; sourceTree = "<group>"; };
+		F46D126421F6B189004CEA10 /* GrayNinit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNinit.h; sourceTree = "<group>"; };
+		F46D126821F6B1AF004CEA10 /* GrayNlanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNlanguage.h; sourceTree = "<group>"; };
+		F46D126921F6B1AF004CEA10 /* GrayNconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNconfig.h; sourceTree = "<group>"; };
+		F46D126A21F6B1B0004CEA10 /* GrayNerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNerror.h; sourceTree = "<group>"; };
+		F46D126C21F6B21F004CEA10 /* GrayNasyn_CallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNasyn_CallBack.h; sourceTree = "<group>"; };
+		F46D126D21F6B21F004CEA10 /* GrayNkeychainConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayNkeychainConfig.m; sourceTree = "<group>"; };
+		F46D126E21F6B21F004CEA10 /* GrayNserviceCodeBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNserviceCodeBridge.h; sourceTree = "<group>"; };
+		F46D126F21F6B21F004CEA10 /* GrayNcommon.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayNcommon.mm; sourceTree = "<group>"; };
+		F46D127021F6B21F004CEA10 /* GrayN_ProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_ProgressHud.h; sourceTree = "<group>"; };
+		F46D127121F6B21F004CEA10 /* GrayN_UrlEncode_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_UrlEncode_GrayN.h; sourceTree = "<group>"; };
+		F46D127221F6B21F004CEA10 /* GrayNcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNcommon.h; sourceTree = "<group>"; };
+		F46D127321F6B220004CEA10 /* GrayN_Timer_GrayN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayN_Timer_GrayN.cpp; sourceTree = "<group>"; };
+		F46D127421F6B220004CEA10 /* GrayNserviceCodeBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayNserviceCodeBridge.m; sourceTree = "<group>"; };
+		F46D127521F6B220004CEA10 /* GrayNasyn_CallBack.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayNasyn_CallBack.mm; sourceTree = "<group>"; };
+		F46D127621F6B220004CEA10 /* GrayN_Thread_GrayN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayN_Thread_GrayN.cpp; sourceTree = "<group>"; };
+		F46D127721F6B220004CEA10 /* GrayN_Thread_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Thread_GrayN.h; sourceTree = "<group>"; };
+		F46D127821F6B220004CEA10 /* GrayN_Timer_GrayN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_Timer_GrayN.h; sourceTree = "<group>"; };
+		F46D127921F6B220004CEA10 /* GrayN_LoadingUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_LoadingUI.h; sourceTree = "<group>"; };
+		F46D127A21F6B220004CEA10 /* GrayNcommon_oc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayNcommon_oc.mm; sourceTree = "<group>"; };
+		F46D127B21F6B220004CEA10 /* GrayNcommon_oc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNcommon_oc.h; sourceTree = "<group>"; };
+		F46D127C21F6B221004CEA10 /* GrayN_LoadingUI.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_LoadingUI.mm; sourceTree = "<group>"; };
+		F46D127D21F6B221004CEA10 /* GrayN_ProgressHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayN_ProgressHud.m; sourceTree = "<group>"; };
+		F46D127E21F6B221004CEA10 /* GrayN_UrlEncode_GrayN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayN_UrlEncode_GrayN.cpp; sourceTree = "<group>"; };
+		F46D127F21F6B221004CEA10 /* GrayNkeychainConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNkeychainConfig.h; sourceTree = "<group>"; };
+		F4A2E9D421D1DE680050EB7B /* libOurSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libOurSDK.a; path = OurSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A2EB9421E4B0620050EB7B /* GrayNbaseSDK.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayNbaseSDK.mm; sourceTree = "<group>"; };
+		F4A2EB9521E4B0620050EB7B /* GrayNbaseSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNbaseSDK.h; sourceTree = "<group>"; };
+		F4D301712228DF850025F94E /* JQPluginSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQPluginSDK.h; sourceTree = "<group>"; };
+		F4D301722228DF850025F94E /* JQPluginSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQPluginSDK.m; sourceTree = "<group>"; };
+		F4D301742228DF920025F94E /* GrayN_JQ.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayN_JQ.mm; sourceTree = "<group>"; };
+		F4D301752228DF920025F94E /* GrayN_JQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayN_JQ.h; sourceTree = "<group>"; };
+		F4EF74ED22547E2600A16E4A /* GrayNLogHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayNLogHandler.mm; sourceTree = "<group>"; };
+		F4EF74EE22547E2600A16E4A /* GrayNLogHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNLogHandler.h; sourceTree = "<group>"; };
+		F4EF74F22254868F00A16E4A /* GrayNAdsBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayNAdsBridge.h; sourceTree = "<group>"; };
+		F4EF74F32254868F00A16E4A /* GrayNAdsBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GrayNAdsBridge.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4A2E9D121D1DE680050EB7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F447656021F6B2D90049A76B /* GrayN_GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				F447657621F6B3220049A76B /* GrayN_GTMBase64.h */,
+				F447657421F6B3220049A76B /* GrayN_GTMBase64.m */,
+				F447657521F6B3220049A76B /* GrayN_GTMDefines.h */,
+			);
+			name = GrayN_GTMBase64;
+			sourceTree = "<group>";
+		};
+		F447656121F6B2DC0049A76B /* GrayN_JSON_cpp */ = {
+			isa = PBXGroup;
+			children = (
+				F447656421F6B3100049A76B /* GrayNautolink_cpp.h */,
+				F447656821F6B3100049A76B /* GrayNconfig_cpp.h */,
+				F447656721F6B3100049A76B /* GrayNfeatures_cpp.h */,
+				F447656921F6B3100049A76B /* GrayNforwards_cpp.h */,
+				F447656C21F6B3110049A76B /* GrayNjson_batchallocator_cpp.h */,
+				F447656A21F6B3110049A76B /* GrayNjson_cpp.h */,
+				F447656621F6B3100049A76B /* GrayNjson_internalarray.inl */,
+				F447656B21F6B3110049A76B /* GrayNjson_internalmap.inl */,
+				F447656521F6B3100049A76B /* GrayNjson_reader.cpp */,
+				F447656D21F6B3110049A76B /* GrayNjson_value.cpp */,
+				F447656321F6B3100049A76B /* GrayNjson_valueiterator.inl */,
+				F447656E21F6B3120049A76B /* GrayNjson_writer.cpp */,
+				F447656F21F6B3120049A76B /* GrayNreader_cpp.h */,
+				F447657021F6B3120049A76B /* GrayNvalue_cpp.h */,
+				F447656221F6B3100049A76B /* GrayNwriter_cpp.h */,
+			);
+			name = GrayN_JSON_cpp;
+			sourceTree = "<group>";
+		};
+		F447657821F6B3410049A76B /* GrayN_AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F447658B21F6B3730049A76B /* GrayN_AFHTTPRequestOperation.h */,
+				F447658F21F6B3730049A76B /* GrayN_AFHTTPRequestOperation.m */,
+				F447658D21F6B3730049A76B /* GrayN_AFHTTPRequestOperationManager.h */,
+				F447659121F6B3740049A76B /* GrayN_AFHTTPRequestOperationManager.m */,
+				F447658A21F6B3720049A76B /* GrayN_AFHTTPSessionManager.h */,
+				F447658421F6B3720049A76B /* GrayN_AFHTTPSessionManager.m */,
+				F447658321F6B3720049A76B /* GrayN_AFNetworkReachabilityManager.h */,
+				F447658921F6B3720049A76B /* GrayN_AFNetworkReachabilityManager.m */,
+				F447658221F6B3710049A76B /* GrayN_AFSecurityPolicy.h */,
+				F447659221F6B3740049A76B /* GrayN_AFSecurityPolicy.m */,
+				F447659321F6B3740049A76B /* GrayN_AFURLConnectionOperation.h */,
+				F447658C21F6B3730049A76B /* GrayN_AFURLConnectionOperation.m */,
+				F447658721F6B3720049A76B /* GrayN_AFURLRequestSerialization.h */,
+				F447658821F6B3720049A76B /* GrayN_AFURLRequestSerialization.m */,
+				F447658E21F6B3730049A76B /* GrayN_AFURLResponseSerialization.h */,
+				F447658621F6B3720049A76B /* GrayN_AFURLResponseSerialization.m */,
+				F447659021F6B3740049A76B /* GrayN_AFURLSessionManager.h */,
+				F447658521F6B3720049A76B /* GrayN_AFURLSessionManager.m */,
+			);
+			name = GrayN_AFNetworking;
+			sourceTree = "<group>";
+		};
+		F44765A021F6B3A10049A76B /* GrayNchannel */ = {
+			isa = PBXGroup;
+			children = (
+				F44765A321F6B3CB0049A76B /* GrayNchannel.h */,
+				F44765A221F6B3CB0049A76B /* GrayNchannel.mm */,
+				F44765A421F6B3CC0049A76B /* GrayNchannelConfig.h */,
+				F44765A521F6B3CC0049A76B /* GrayNchannelSDK.h */,
+				F44765A621F6B3CC0049A76B /* GrayNchannelSDK.m */,
+				F44765A821F6B3CC0049A76B /* GrayNSDK.cpp */,
+				F44765A721F6B3CC0049A76B /* GrayNSDK.h */,
+				F44765A121F6B3B20049A76B /* GrayNappstore */,
+				F4D301702228DA390025F94E /* GrayN_JQ */,
+			);
+			name = GrayNchannel;
+			sourceTree = "<group>";
+		};
+		F44765A121F6B3B20049A76B /* GrayNappstore */ = {
+			isa = PBXGroup;
+			children = (
+				F44765BF21F6B3F70049A76B /* GrayN_Applog */,
+				F44765BE21F6B3F60049A76B /* GrayN_FMDB */,
+				F44765BD21F6B3F40049A76B /* GrayN_ProductInfo */,
+				F44765BC21F6B3F00049A76B /* GrayN_Receipt */,
+				F44765AC21F6B3E40049A76B /* AppStore_IAP_GrayN.h */,
+				F44765B521F6B3E50049A76B /* AppStore_IAP_GrayN.mm */,
+				F44765B221F6B3E50049A76B /* appstoreSDK_GrayN.h */,
+				F44765B621F6B3E60049A76B /* appstoreSDK_GrayN.mm */,
+				F44765B421F6B3E50049A76B /* GrayN_AppPurchase.h */,
+				F44765AF21F6B3E50049A76B /* GrayN_AppPurchase.mm */,
+				F44765B021F6B3E50049A76B /* GrayN_Store_IAP.h */,
+				F44765AE21F6B3E50049A76B /* GrayN_Store_IAP.mm */,
+				F44765B121F6B3E50049A76B /* GrayN_Stream.cpp */,
+				F44765B321F6B3E50049A76B /* GrayN_Stream.h */,
+				F44765AD21F6B3E50049A76B /* GrayN_TempleQueue.h */,
+			);
+			name = GrayNappstore;
+			sourceTree = "<group>";
+		};
+		F44765BC21F6B3F00049A76B /* GrayN_Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				F44765D921F6B4740049A76B /* GrayN_AppReceipt.h */,
+				F44765D821F6B4740049A76B /* GrayN_AppReceipt.mm */,
+				F44765DA21F6B4740049A76B /* GrayN_SynAppReceipt.h */,
+				F44765DB21F6B4740049A76B /* GrayN_SynAppReceipt.mm */,
+			);
+			name = GrayN_Receipt;
+			sourceTree = "<group>";
+		};
+		F44765BD21F6B3F40049A76B /* GrayN_ProductInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F44765D521F6B44F0049A76B /* GrayN_Store_ProductInfo.h */,
+				F44765D621F6B44F0049A76B /* GrayN_Store_ProductInfo.m */,
+			);
+			name = GrayN_ProductInfo;
+			sourceTree = "<group>";
+		};
+		F44765BE21F6B3F60049A76B /* GrayN_FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				F44765C821F6B4330049A76B /* GrayN_FMDatabase.h */,
+				F44765CC21F6B4330049A76B /* GrayN_FMDatabase.m */,
+				F44765CE21F6B4340049A76B /* GrayN_FMDatabaseAdditions.h */,
+				F44765CB21F6B4330049A76B /* GrayN_FMDatabaseAdditions.m */,
+				F44765CD21F6B4330049A76B /* GrayN_FMDatabasePool.h */,
+				F44765C621F6B4330049A76B /* GrayN_FMDatabasePool.m */,
+				F44765C721F6B4330049A76B /* GrayN_FMDatabaseQueue.h */,
+				F44765C921F6B4330049A76B /* GrayN_FMDatabaseQueue.m */,
+				F44765CF21F6B4340049A76B /* GrayN_FMResultSet.h */,
+				F44765CA21F6B4330049A76B /* GrayN_FMResultSet.m */,
+			);
+			name = GrayN_FMDB;
+			sourceTree = "<group>";
+		};
+		F44765BF21F6B3F70049A76B /* GrayN_Applog */ = {
+			isa = PBXGroup;
+			children = (
+				F44765C221F6B4210049A76B /* AppLog_GrayN.h */,
+				F44765C021F6B4210049A76B /* AppLog_GrayN.mm */,
+				F44765C121F6B4210049A76B /* SynAppLog_GrayN.h */,
+				F44765C321F6B4210049A76B /* SynAppLog_GrayN.mm */,
+			);
+			name = GrayN_Applog;
+			sourceTree = "<group>";
+		};
+		F44765DE21F6B5500049A76B /* GrayNcustomService */ = {
+			isa = PBXGroup;
+			children = (
+				F44765E521F6B5910049A76B /* GrayNcustomService_Control.h */,
+				F44765E721F6B5910049A76B /* GrayNcustomService_Control.mm */,
+				F44765E621F6B5910049A76B /* GrayNcustomServiceConfig.h */,
+				F44765E021F6B5690049A76B /* GrayNcustomServiceUI */,
+				F44765DF21F6B55D0049A76B /* GrayNcustomServiceTools */,
+			);
+			name = GrayNcustomService;
+			sourceTree = "<group>";
+		};
+		F44765DF21F6B55D0049A76B /* GrayNcustomServiceTools */ = {
+			isa = PBXGroup;
+			children = (
+				F44765EC21F6B5C10049A76B /* GrayN_CustomServiceUploadFile.h */,
+				F44765EB21F6B5C10049A76B /* GrayN_CustomServiceUploadFile.mm */,
+				F44765ED21F6B5C10049A76B /* GrayN_GzipUtility.h */,
+				F44765EA21F6B5C10049A76B /* GrayN_GzipUtility.m */,
+			);
+			name = GrayNcustomServiceTools;
+			sourceTree = "<group>";
+		};
+		F44765E021F6B5690049A76B /* GrayNcustomServiceUI */ = {
+			isa = PBXGroup;
+			children = (
+				F44765F421F6B5D70049A76B /* GrayN_AsyncImageLoader.h */,
+				F44765F521F6B5D70049A76B /* GrayN_AsyncImageLoader.m */,
+				F44765F021F6B5D70049A76B /* GrayN_CustomService_Photo.h */,
+				F44765F121F6B5D70049A76B /* GrayN_CustomService_Photo.m */,
+				F44765F221F6B5D70049A76B /* GrayNcustomService_ImageData.h */,
+				F44765F321F6B5D70049A76B /* GrayNcustomService_ImageData.m */,
+				F44765E921F6B5A50049A76B /* GrayN_ImagePicker */,
+			);
+			name = GrayNcustomServiceUI;
+			sourceTree = "<group>";
+		};
+		F44765E921F6B5A50049A76B /* GrayN_ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F447660121F6B5F20049A76B /* GrayN_ELCAsset.h */,
+				F44765FD21F6B5F10049A76B /* GrayN_ELCAsset.m */,
+				F44765FE21F6B5F10049A76B /* GrayN_ELCAssetCell.h */,
+				F447660321F6B5F20049A76B /* GrayN_ELCAssetCell.m */,
+				F447660621F6B5F20049A76B /* GrayN_ELCAssetPickerFilterDelegate.h */,
+				F44765FA21F6B5F00049A76B /* GrayN_ELCAssetSelectionDelegate.h */,
+				F44765FF21F6B5F10049A76B /* GrayN_ELCAssetTablePicker.h */,
+				F447660221F6B5F20049A76B /* GrayN_ELCAssetTablePicker.m */,
+				F447660421F6B5F20049A76B /* GrayN_ELCConsole.h */,
+				F447660521F6B5F20049A76B /* GrayN_ELCConsole.m */,
+				F44765FB21F6B5F10049A76B /* GrayN_ELCImagePickerController.h */,
+				F447660721F6B5F20049A76B /* GrayN_ELCImagePickerController.m */,
+				F44765F921F6B5F00049A76B /* GrayN_ELCImagePickerHeader.h */,
+				F44765FC21F6B5F10049A76B /* GrayN_ELCOverlayImageView.h */,
+				F447660021F6B5F20049A76B /* GrayN_ELCOverlayImageView.m */,
+			);
+			name = GrayN_ImagePicker;
+			sourceTree = "<group>";
+		};
+		F447660E21F6B6020049A76B /* GrayNlogCenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4EF74EE22547E2600A16E4A /* GrayNLogHandler.h */,
+				F4EF74ED22547E2600A16E4A /* GrayNLogHandler.mm */,
+				F447661021F6B6370049A76B /* GrayN_ErrorLog_GrayN.cpp */,
+				F447661821F6B6380049A76B /* GrayN_ErrorLog_GrayN.h */,
+				F447661321F6B6370049A76B /* GrayN_LogDatabase_GrayN.h */,
+				F447661521F6B6370049A76B /* GrayN_LogDatabase_GrayN.mm */,
+				F447661421F6B6370049A76B /* GrayN_LogHttp.cpp */,
+				F447661721F6B6380049A76B /* GrayN_LogHttp.h */,
+				F447661221F6B6370049A76B /* GrayNlogCenter.h */,
+				F447661121F6B6370049A76B /* GrayNlogCenter.mm */,
+				F447661621F6B6370049A76B /* GrayNlogHeader.h */,
+			);
+			name = GrayNlogCenter;
+			sourceTree = "<group>";
+		};
+		F447661D21F6B64A0049A76B /* GrayNpayCenter */ = {
+			isa = PBXGroup;
+			children = (
+				F447662021F6B65A0049A76B /* GrayNpayCenter.cpp */,
+				F447661F21F6B65A0049A76B /* GrayNpayCenter.h */,
+			);
+			name = GrayNpayCenter;
+			sourceTree = "<group>";
+		};
+		F447661E21F6B64F0049A76B /* GrayNuserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				F447662421F6B6770049A76B /* GrayN_UserCenter.cpp */,
+				F447662521F6B6770049A76B /* GrayN_UserCenter.h */,
+				F447662321F6B6770049A76B /* GrayN_UserHeart.cpp */,
+				F447662221F6B6770049A76B /* GrayN_UserHeart.h */,
+			);
+			name = GrayNuserCenter;
+			sourceTree = "<group>";
+		};
+		F447662821F6B6900049A76B /* GrayNuserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				F447663321F6B6BB0049A76B /* GrayN_WebViewJSBridge */,
+				F447663221F6B6B10049A76B /* GrayN_BaseUI */,
+				F447662921F6B6A60049A76B /* GrayN_BaseControl.h */,
+				F447662E21F6B6A60049A76B /* GrayN_BaseControl.mm */,
+				F447662D21F6B6A60049A76B /* GrayN_Offical.h */,
+				F447662A21F6B6A60049A76B /* GrayN_Offical.mm */,
+				F447662B21F6B6A60049A76B /* GrayN_WebViewController.h */,
+				F447662C21F6B6A60049A76B /* GrayN_WebViewController.mm */,
+			);
+			name = GrayNuserInterface;
+			sourceTree = "<group>";
+		};
+		F447663221F6B6B10049A76B /* GrayN_BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				F447664221F6B6CA0049A76B /* GrayN_Button.h */,
+				F447663E21F6B6CA0049A76B /* GrayN_Button.m */,
+				F447664521F6B6CB0049A76B /* GrayN_CodeScanner.h */,
+				F447663B21F6B6C90049A76B /* GrayN_CodeScanner.mm */,
+				F447663721F6B6C80049A76B /* GrayN_DebugView.h */,
+				F447664321F6B6CA0049A76B /* GrayN_DebugView.mm */,
+				F447663821F6B6C80049A76B /* GrayN_GameCenter.h */,
+				F447663F21F6B6CA0049A76B /* GrayN_GameCenter.mm */,
+				F447663921F6B6C90049A76B /* GrayN_Hud.h */,
+				F447663521F6B6C80049A76B /* GrayN_Hud.m */,
+				F447664421F6B6CA0049A76B /* GrayN_QRCodeConfirm.h */,
+				F447663A21F6B6C90049A76B /* GrayN_QRCodeConfirm.mm */,
+				F447663C21F6B6C90049A76B /* GrayN_Toast.h */,
+				F447663D21F6B6C90049A76B /* GrayN_Toast.m */,
+				F447664021F6B6CA0049A76B /* GrayN_Tools.h */,
+				F447664121F6B6CA0049A76B /* GrayN_Tools.mm */,
+				F447663421F6B6C80049A76B /* GrayN_UserInfo.h */,
+				F447663621F6B6C80049A76B /* GrayN_UserInfo.mm */,
+			);
+			name = GrayN_BaseUI;
+			sourceTree = "<group>";
+		};
+		F447663321F6B6BB0049A76B /* GrayN_WebViewJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				F447665021F6B6DC0049A76B /* GrayN_WebViewJavascriptBridge_JS.h */,
+				F447665621F6B6DC0049A76B /* GrayN_WebViewJavascriptBridge_JS.m */,
+				F447665321F6B6DC0049A76B /* GrayN_WebViewJavascriptBridge.h */,
+				F447664F21F6B6DC0049A76B /* GrayN_WebViewJavascriptBridge.mm */,
+				F447665121F6B6DC0049A76B /* GrayN_WebViewJavascriptBridgeBase.h */,
+				F447665521F6B6DC0049A76B /* GrayN_WebViewJavascriptBridgeBase.m */,
+				F447665421F6B6DC0049A76B /* GrayN_WKWebViewJavascriptBridge.h */,
+				F447665221F6B6DC0049A76B /* GrayN_WKWebViewJavascriptBridge.mm */,
+			);
+			name = GrayN_WebViewJSBridge;
+			sourceTree = "<group>";
+		};
+		F46D125C21F6B14E004CEA10 /* GrayNiOS */ = {
+			isa = PBXGroup;
+			children = (
+				F46D125D21F6B16B004CEA10 /* OPGameSDK.cpp */,
+				F46D125E21F6B16B004CEA10 /* OPGameSDK.h */,
+			);
+			name = GrayNiOS;
+			sourceTree = "<group>";
+		};
+		F46D126021F6B177004CEA10 /* GrayNinit */ = {
+			isa = PBXGroup;
+			children = (
+				F46D126121F6B189004CEA10 /* GrayNinit.cpp */,
+				F46D126421F6B189004CEA10 /* GrayNinit.h */,
+				F46D126321F6B189004CEA10 /* GrayNinitCheck.cpp */,
+				F46D126221F6B189004CEA10 /* GrayNinitCheck.h */,
+			);
+			name = GrayNinit;
+			sourceTree = "<group>";
+		};
+		F46D126721F6B196004CEA10 /* GrayNconfig */ = {
+			isa = PBXGroup;
+			children = (
+				F46D126921F6B1AF004CEA10 /* GrayNconfig.h */,
+				F46D126A21F6B1B0004CEA10 /* GrayNerror.h */,
+				F46D126821F6B1AF004CEA10 /* GrayNlanguage.h */,
+			);
+			name = GrayNconfig;
+			sourceTree = "<group>";
+		};
+		F46D126B21F6B1C9004CEA10 /* GrayNcommon */ = {
+			isa = PBXGroup;
+			children = (
+				F46D128C21F6B24D004CEA10 /* GrayNdecode */,
+				F46D128B21F6B248004CEA10 /* GrayNnetwork */,
+				F46D127921F6B220004CEA10 /* GrayN_LoadingUI.h */,
+				F46D127C21F6B221004CEA10 /* GrayN_LoadingUI.mm */,
+				F46D127021F6B21F004CEA10 /* GrayN_ProgressHud.h */,
+				F46D127D21F6B221004CEA10 /* GrayN_ProgressHud.m */,
+				F46D127621F6B220004CEA10 /* GrayN_Thread_GrayN.cpp */,
+				F46D127721F6B220004CEA10 /* GrayN_Thread_GrayN.h */,
+				F46D127321F6B220004CEA10 /* GrayN_Timer_GrayN.cpp */,
+				F46D127821F6B220004CEA10 /* GrayN_Timer_GrayN.h */,
+				F46D127E21F6B221004CEA10 /* GrayN_UrlEncode_GrayN.cpp */,
+				F46D127121F6B21F004CEA10 /* GrayN_UrlEncode_GrayN.h */,
+				F46D126C21F6B21F004CEA10 /* GrayNasyn_CallBack.h */,
+				F46D127521F6B220004CEA10 /* GrayNasyn_CallBack.mm */,
+				F46D127B21F6B220004CEA10 /* GrayNcommon_oc.h */,
+				F46D127A21F6B220004CEA10 /* GrayNcommon_oc.mm */,
+				F46D127221F6B21F004CEA10 /* GrayNcommon.h */,
+				F46D126F21F6B21F004CEA10 /* GrayNcommon.mm */,
+				F46D127F21F6B221004CEA10 /* GrayNkeychainConfig.h */,
+				F46D126D21F6B21F004CEA10 /* GrayNkeychainConfig.m */,
+				F46D126E21F6B21F004CEA10 /* GrayNserviceCodeBridge.h */,
+				F46D127421F6B220004CEA10 /* GrayNserviceCodeBridge.m */,
+			);
+			name = GrayNcommon;
+			sourceTree = "<group>";
+		};
+		F46D128B21F6B248004CEA10 /* GrayNnetwork */ = {
+			isa = PBXGroup;
+			children = (
+				F447659D21F6B3840049A76B /* GrayNsocket.cpp */,
+				F447659E21F6B3840049A76B /* GrayNsocket.h */,
+				F447657C21F6B35D0049A76B /* GrayN_Http_GrayN.cpp */,
+				F447657A21F6B35C0049A76B /* GrayN_Http_GrayN.h */,
+				F447657B21F6B35C0049A76B /* GrayN_Https_GrayN.h */,
+				F447657D21F6B35D0049A76B /* GrayN_Https_GrayN.mm */,
+				F447657E21F6B35D0049A76B /* GrayN_Reachability.h */,
+				F447657921F6B35C0049A76B /* GrayN_Reachability.m */,
+				F447657821F6B3410049A76B /* GrayN_AFNetworking */,
+			);
+			name = GrayNnetwork;
+			sourceTree = "<group>";
+		};
+		F46D128C21F6B24D004CEA10 /* GrayNdecode */ = {
+			isa = PBXGroup;
+			children = (
+				F447656121F6B2DC0049A76B /* GrayN_JSON_cpp */,
+				F447656021F6B2D90049A76B /* GrayN_GTMBase64 */,
+				F447655A21F6B2B40049A76B /* GrayN_Base64_GrayN.cpp */,
+				F447655C21F6B2B40049A76B /* GrayN_Base64_GrayN.h */,
+				F447655D21F6B2B40049A76B /* GrayN_Des_GrayN.cpp */,
+				F447655B21F6B2B40049A76B /* GrayN_Des_GrayN.h */,
+			);
+			name = GrayNdecode;
+			sourceTree = "<group>";
+		};
+		F4A2E9CB21D1DE680050EB7B = {
+			isa = PBXGroup;
+			children = (
+				F4A2E9D621D1DE680050EB7B /* GrayN */,
+				F4A2E9D521D1DE680050EB7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4A2E9D521D1DE680050EB7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4A2E9D421D1DE680050EB7B /* libOurSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4A2E9D621D1DE680050EB7B /* GrayN */ = {
+			isa = PBXGroup;
+			children = (
+				F4EF74F12254867D00A16E4A /* GrayNAdsCenter */,
+				F447662821F6B6900049A76B /* GrayNuserInterface */,
+				F447661E21F6B64F0049A76B /* GrayNuserCenter */,
+				F447661D21F6B64A0049A76B /* GrayNpayCenter */,
+				F447660E21F6B6020049A76B /* GrayNlogCenter */,
+				F44765DE21F6B5500049A76B /* GrayNcustomService */,
+				F44765A021F6B3A10049A76B /* GrayNchannel */,
+				F46D126B21F6B1C9004CEA10 /* GrayNcommon */,
+				F46D126721F6B196004CEA10 /* GrayNconfig */,
+				F46D126021F6B177004CEA10 /* GrayNinit */,
+				F46D125C21F6B14E004CEA10 /* GrayNiOS */,
+				F4A2EB9521E4B0620050EB7B /* GrayNbaseSDK.h */,
+				F4A2EB9421E4B0620050EB7B /* GrayNbaseSDK.mm */,
+			);
+			path = GrayN;
+			sourceTree = "<group>";
+		};
+		F4D301702228DA390025F94E /* GrayN_JQ */ = {
+			isa = PBXGroup;
+			children = (
+				F4D301752228DF920025F94E /* GrayN_JQ.h */,
+				F4D301742228DF920025F94E /* GrayN_JQ.mm */,
+				F4D301712228DF850025F94E /* JQPluginSDK.h */,
+				F4D301722228DF850025F94E /* JQPluginSDK.m */,
+			);
+			name = GrayN_JQ;
+			sourceTree = "<group>";
+		};
+		F4EF74F12254867D00A16E4A /* GrayNAdsCenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4EF74F22254868F00A16E4A /* GrayNAdsBridge.h */,
+				F4EF74F32254868F00A16E4A /* GrayNAdsBridge.mm */,
+			);
+			name = GrayNAdsCenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4A2E9D321D1DE680050EB7B /* GrayN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4A2E9DD21D1DE680050EB7B /* Build configuration list for PBXNativeTarget "GrayN" */;
+			buildPhases = (
+				F4A2E9D021D1DE680050EB7B /* Sources */,
+				F4A2E9D121D1DE680050EB7B /* Frameworks */,
+				F4A2E9D221D1DE680050EB7B /* CopyFiles */,
+				F431FC9B21E72BEF0026EA43 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrayN;
+			productName = GrayN;
+			productReference = F4A2E9D421D1DE680050EB7B /* libOurSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4A2E9CC21D1DE680050EB7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = graynoodle;
+				TargetAttributes = {
+					F4A2E9D321D1DE680050EB7B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F4A2E9CF21D1DE680050EB7B /* Build configuration list for PBXProject "GrayN" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4A2E9CB21D1DE680050EB7B;
+			productRefGroup = F4A2E9D521D1DE680050EB7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4A2E9D321D1DE680050EB7B /* GrayN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F431FC9B21E72BEF0026EA43 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION == Debug ]; then\nexit 0;\nfi\n#!/bin/bash\n#获取本机名\nCurPath=$(dirname \"$0\")\necho $CurPath > $CurPath/OPBaseSDK.txt\nt=`awk -F\":\" '{print}' $CurPath/OPBaseSDK.txt`\nrm $CurPath/OPBaseSDK.txt\necho ${t#/Users/} > $CurPath/OPBaseSDK.txt\n    s=`awk -F\":\" '{print}' $CurPath/OPBaseSDK.txt`\n    rm $CurPath/OPBaseSDK.txt\n    echo ${s%/Library*} > $CurPath/OPBaseSDK.txt\n    \n    PCName=`awk -F\":\" '{print}' $CurPath/OPBaseSDK.txt`\n    rm $CurPath/OPBaseSDK.txt\n    \n    #静态库出包路径\n    output=\"/Users/\"${PCName}\"/Desktop/OPBaseSDK\"\n    \n    #获取临时目录名称\n    cd /${BUILT_PRODUCTS_DIR}/../../..\n    pwd > tmp.txt\n    t=`awk -F\":\" '{print $1}' tmp.txt`\n    pkgPath=\"/Users/\"${PCName}\"/Library/Developer/Xcode/DerivedData/\"${t##*DerivedData/}\"/Build/Products\"\n        pkgName=${PRODUCT_NAME}\".a\"\n        \n        #删除流文件\n        rm tmp.txt\n        \n        #删除上次编译的静态库\n        rm -rf $output\n        mkdir $output\n        \n        cd /${pkgPath}/Release-iphoneos\n        ls > result.txt\n        \n        #读取.a文件名\n        a=`ls | awk '{print $1}' | grep ${pkgName}\"$\" `\n        #echo $a\n        \n        #输出合并的静态库,cp头文件\n        lipo -create ${pkgPath}/Release-iphonesimulator/${pkgName} ${pkgPath}/Release-iphoneos/${pkgName} -output ${output}/${a}\n        \n        #拷贝头文件\n        cp -rf ${pkgPath}/Release-iphoneos/usr/local/include/ ${output}/include/\n        \n        #显示合并后的静态库信息\n        lipo -info $output/${a}\n        \n        #删除流文件\n        rm result.txt\n        \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4A2E9D021D1DE680050EB7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F447659A21F6B3740049A76B /* GrayN_AFHTTPRequestOperation.m in Sources */,
+				F447664B21F6B6CB0049A76B /* GrayN_Button.m in Sources */,
+				F447665721F6B6DD0049A76B /* GrayN_WebViewJavascriptBridge.mm in Sources */,
+				F447660A21F6B5F30049A76B /* GrayN_ELCAssetTablePicker.m in Sources */,
+				F44765D321F6B4340049A76B /* GrayN_FMDatabaseAdditions.m in Sources */,
+				F447655F21F6B2B40049A76B /* GrayN_Des_GrayN.cpp in Sources */,
+				F44765D421F6B4340049A76B /* GrayN_FMDatabase.m in Sources */,
+				F447664921F6B6CB0049A76B /* GrayN_CodeScanner.mm in Sources */,
+				F447659F21F6B3840049A76B /* GrayNsocket.cpp in Sources */,
+				F46D128721F6B222004CEA10 /* GrayN_LoadingUI.mm in Sources */,
+				F447660821F6B5F30049A76B /* GrayN_ELCAsset.m in Sources */,
+				F447660921F6B5F30049A76B /* GrayN_ELCOverlayImageView.m in Sources */,
+				F447663121F6B6A70049A76B /* GrayN_BaseControl.mm in Sources */,
+				F44765EF21F6B5C20049A76B /* GrayN_CustomServiceUploadFile.mm in Sources */,
+				F447657121F6B3120049A76B /* GrayNjson_reader.cpp in Sources */,
+				F46D128321F6B222004CEA10 /* GrayNserviceCodeBridge.m in Sources */,
+				F44765B921F6B3E60049A76B /* GrayN_Stream.cpp in Sources */,
+				F44765BB21F6B3E60049A76B /* appstoreSDK_GrayN.mm in Sources */,
+				F447657221F6B3120049A76B /* GrayNjson_value.cpp in Sources */,
+				F447665821F6B6DD0049A76B /* GrayN_WKWebViewJavascriptBridge.mm in Sources */,
+				F46D126521F6B189004CEA10 /* GrayNinit.cpp in Sources */,
+				F44765B721F6B3E60049A76B /* GrayN_Store_IAP.mm in Sources */,
+				F447664621F6B6CB0049A76B /* GrayN_Hud.m in Sources */,
+				F447664D21F6B6CB0049A76B /* GrayN_Tools.mm in Sources */,
+				F46D125F21F6B16B004CEA10 /* OPGameSDK.cpp in Sources */,
+				F46D128521F6B222004CEA10 /* GrayN_Thread_GrayN.cpp in Sources */,
+				F44765AA21F6B3CD0049A76B /* GrayNchannelSDK.m in Sources */,
+				F447664721F6B6CB0049A76B /* GrayN_UserInfo.mm in Sources */,
+				F44765E821F6B5910049A76B /* GrayNcustomService_Control.mm in Sources */,
+				F447665921F6B6DD0049A76B /* GrayN_WebViewJavascriptBridgeBase.m in Sources */,
+				F44765F821F6B5D70049A76B /* GrayN_AsyncImageLoader.m in Sources */,
+				F46D128621F6B222004CEA10 /* GrayNcommon_oc.mm in Sources */,
+				F46D128421F6B222004CEA10 /* GrayNasyn_CallBack.mm in Sources */,
+				F44765D121F6B4340049A76B /* GrayN_FMDatabaseQueue.m in Sources */,
+				F447659821F6B3740049A76B /* GrayN_AFNetworkReachabilityManager.m in Sources */,
+				F447662F21F6B6A70049A76B /* GrayN_Offical.mm in Sources */,
+				F44765A921F6B3CD0049A76B /* GrayNchannel.mm in Sources */,
+				F447659621F6B3740049A76B /* GrayN_AFURLResponseSerialization.m in Sources */,
+				F447660C21F6B5F30049A76B /* GrayN_ELCConsole.m in Sources */,
+				F46D128821F6B222004CEA10 /* GrayN_ProgressHud.m in Sources */,
+				F44765DD21F6B4740049A76B /* GrayN_SynAppReceipt.mm in Sources */,
+				F44765D721F6B44F0049A76B /* GrayN_Store_ProductInfo.m in Sources */,
+				F44765BA21F6B3E60049A76B /* AppStore_IAP_GrayN.mm in Sources */,
+				F447659721F6B3740049A76B /* GrayN_AFURLRequestSerialization.m in Sources */,
+				F447659921F6B3740049A76B /* GrayN_AFURLConnectionOperation.m in Sources */,
+				F44765AB21F6B3CD0049A76B /* GrayNSDK.cpp in Sources */,
+				F447665A21F6B6DD0049A76B /* GrayN_WebViewJavascriptBridge_JS.m in Sources */,
+				F447661921F6B6380049A76B /* GrayN_ErrorLog_GrayN.cpp in Sources */,
+				F447664821F6B6CB0049A76B /* GrayN_QRCodeConfirm.mm in Sources */,
+				F447664C21F6B6CB0049A76B /* GrayN_GameCenter.mm in Sources */,
+				F447663021F6B6A70049A76B /* GrayN_WebViewController.mm in Sources */,
+				F447659421F6B3740049A76B /* GrayN_AFHTTPSessionManager.m in Sources */,
+				F447661C21F6B6380049A76B /* GrayN_LogDatabase_GrayN.mm in Sources */,
+				F4EF74EF22547E2700A16E4A /* GrayNLogHandler.mm in Sources */,
+				F447662721F6B6770049A76B /* GrayN_UserCenter.cpp in Sources */,
+				F447657321F6B3120049A76B /* GrayNjson_writer.cpp in Sources */,
+				F44765C521F6B4210049A76B /* SynAppLog_GrayN.mm in Sources */,
+				F447664A21F6B6CB0049A76B /* GrayN_Toast.m in Sources */,
+				F44765F621F6B5D70049A76B /* GrayN_CustomService_Photo.m in Sources */,
+				F44765DC21F6B4740049A76B /* GrayN_AppReceipt.mm in Sources */,
+				F447662621F6B6770049A76B /* GrayN_UserHeart.cpp in Sources */,
+				F447661A21F6B6380049A76B /* GrayNlogCenter.mm in Sources */,
+				F46D128121F6B222004CEA10 /* GrayNcommon.mm in Sources */,
+				F46D128221F6B222004CEA10 /* GrayN_Timer_GrayN.cpp in Sources */,
+				F4A2EB9621E4B0620050EB7B /* GrayNbaseSDK.mm in Sources */,
+				F447655E21F6B2B40049A76B /* GrayN_Base64_GrayN.cpp in Sources */,
+				F447660D21F6B5F30049A76B /* GrayN_ELCImagePickerController.m in Sources */,
+				F447659B21F6B3740049A76B /* GrayN_AFHTTPRequestOperationManager.m in Sources */,
+				F44765D221F6B4340049A76B /* GrayN_FMResultSet.m in Sources */,
+				F44765D021F6B4340049A76B /* GrayN_FMDatabasePool.m in Sources */,
+				F447657721F6B3220049A76B /* GrayN_GTMBase64.m in Sources */,
+				F46D128921F6B222004CEA10 /* GrayN_UrlEncode_GrayN.cpp in Sources */,
+				F46D128021F6B222004CEA10 /* GrayNkeychainConfig.m in Sources */,
+				F447658021F6B35E0049A76B /* GrayN_Http_GrayN.cpp in Sources */,
+				F44765F721F6B5D70049A76B /* GrayNcustomService_ImageData.m in Sources */,
+				F447660B21F6B5F30049A76B /* GrayN_ELCAssetCell.m in Sources */,
+				F447658121F6B35E0049A76B /* GrayN_Https_GrayN.mm in Sources */,
+				F447659C21F6B3740049A76B /* GrayN_AFSecurityPolicy.m in Sources */,
+				F44765EE21F6B5C20049A76B /* GrayN_GzipUtility.m in Sources */,
+				F46D126621F6B189004CEA10 /* GrayNinitCheck.cpp in Sources */,
+				F447664E21F6B6CB0049A76B /* GrayN_DebugView.mm in Sources */,
+				F44765B821F6B3E60049A76B /* GrayN_AppPurchase.mm in Sources */,
+				F447662121F6B65A0049A76B /* GrayNpayCenter.cpp in Sources */,
+				F447661B21F6B6380049A76B /* GrayN_LogHttp.cpp in Sources */,
+				F44765C421F6B4210049A76B /* AppLog_GrayN.mm in Sources */,
+				F4EF74F42254868F00A16E4A /* GrayNAdsBridge.mm in Sources */,
+				F447659521F6B3740049A76B /* GrayN_AFURLSessionManager.m in Sources */,
+				F447657F21F6B35E0049A76B /* GrayN_Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F4A2E9DB21D1DE680050EB7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F4A2E9DC21D1DE680050EB7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4A2E9DE21D1DE680050EB7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					SDK_IPV6,
+					SDK_APPSTORE,
+					HTTPS,
+					CHECKORDER,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-all_load",
+				);
+				PRODUCT_NAME = OurSDK;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4A2E9DF21D1DE680050EB7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SDK_IPV6,
+					SDK_APPSTORE,
+					CHECKORDER,
+					HTTPS,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-all_load",
+				);
+				PRODUCT_NAME = OurSDK;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4A2E9CF21D1DE680050EB7B /* Build configuration list for PBXProject "GrayN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A2E9DB21D1DE680050EB7B /* Debug */,
+				F4A2E9DC21D1DE680050EB7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4A2E9DD21D1DE680050EB7B /* Build configuration list for PBXNativeTarget "GrayN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A2E9DE21D1DE680050EB7B /* Debug */,
+				F4A2E9DF21D1DE680050EB7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4A2E9CC21D1DE680050EB7B /* Project object */;
+}
